@@ -1,169 +1,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Montserrat:wght@300&display=swap');
+@import "./css/base.css";
+@import "./css/components.css";
+@import "./css/layout.css";
 
-/** General styles **/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-}
-
-h1 {
-    font-size: 3rem;
-}
-
-h2 {
-    font-size: 1.5rem;
-    font-weight: 300;
-}
-
-p {
-    font-size: 1rem;
-    line-height: 1.5rem;
-}
-
-a {
-    text-decoration: none;
-}
-
-img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    width: 100%;
-}
-
-.section-title {
-    font-size: 2.5rem;
-    font-weight: 300;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: .1rem;
-    color: black;
-    margin-bottom: 10px;
-}
-
-.section-title span {
-    color: crimson;
-}
-
-.btn {
-    display: inline-block;
-    background-color: transparent;
-    color: crimson;
-    font-size: 1.25rem;
-    letter-spacing: .5rem;
-    text-transform: uppercase;
-    margin-top: 25px;
-    padding: 10px 30px;
-    border: 2px solid crimson;
-    transition: .3s ease;
-    transition-property: background-color, color;
-}
-
-.btn:hover {
-    background-color: crimson;
-    color: white;
-}
 
 
 /** Hero section **/
 #hero {
-    background-image: url(./img/img-1.png);
-    background-size: cover;
-    background-position: top center;
-    position: relative;
-    z-index: 1;
-}
-
-#hero::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: black;
-    opacity: .9;
-    z-index: -1;
+    background-image: linear-gradient(180deg, #012E40, #00010D);
+    color: white;
 }
 
 .hero {
-    padding: 0 50px;
-    margin: 0 auto;
-    max-width: 1200px;
-    justify-content: flex-start;
-    color: white;
+    text-align: center;
 }
 
 
 
 /** About section **/
 .about {
-    flex-direction: column-reverse;
-    text-align: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 100px 20px;
+    flex-direction: column;
 }
 
-.left-col {
-    height: 300px;
-    width: 250px;
-}
-
-.right-col {
-    width: 100%;
-}
-
-.right-col h2 {
-    letter-spacing: .2rem;
-    margin-bottom: 20px;
-}
-
-.right-col p {
-    margin-bottom: 20px;
-}
-
-.right-col .btn {
-    margin-bottom: 30px;
+.about-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .about-img {
-    position: relative;
-    height: 100%;
-    width: 100%;
+    margin-top: 20px;
+    width: 70%;
 }
 
-.about-img::after {
-    content: '';
-    position: absolute;
-    top: 15px;
-    right: -20px;
-    height: 98%;
-    width: 98%;
-    border: 5px solid crimson;
-    z-index: -1;
+.about-skills, .about-services {
+    margin-top: 20px;
+    padding: 20px 0;
+    width: 100%;
+    border-bottom: 2px solid gray;
+}
+
+.skill-icon {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.skill-item {
+    height: 50px;
+    width: 50px;
+    margin: 0 5px;
 }
 
 
 
 /** projects section **/
+#projects{
+    background-color: #f2f2f2;
+}
+
 .projects {
     flex-direction: column;
     max-width: 1200px;
-    padding: 100px 20px;
+    padding: 50px 20px;
     margin: 0 auto;
 }
 
@@ -180,18 +78,28 @@ img {
 }
 
 .project-item {
-    margin: 20px auto;
-    overflow: hidden;
-    border-radius: 10px;
+    border-bottom: 2px solid gray;
+    
+}
+
+.project-info {
+    margin-top: 20px;
 }
 
 .project-img {
-    height: 300px;
-    width: 100%;
+    margin: 0 auto;
+    height: 150px;
+    width: 80%;
+    margin-top: 20px;
+    background-color: green;
     overflow: hidden;
-    position: relative;
 }
 
+.project-bottom {
+    margin: 20px 0;
+}
+
+/*
 .project-img::after {
     content: '';
     position: absolute;
@@ -225,12 +133,45 @@ img {
 .project-info h2 {
     font-size: 1.2rem;
 }
+*/
+
+/** contact section**/
+.contact {
+    flex-direction: column;
+}
+
+.contact-info {
+    margin-top: 20px;
+    padding: 30px 20px;
+    background-color: #012E40;
+    color: white;
+}
+
+.contact-email {
+    margin: 10px 0;
+}
+
+.contact-email , .contact-phone {
+    display: flex;
+
+}
+
+.contact-email a, .contact-phone a {
+    color: white;
+}
+
+.email-icon, .phone-icon {
+    height: 40px;
+    width: 40px;
+    margin: 0 5px;
+}
+
 
 
 
 /** footer section **/
 #footer {
-    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    background-color: #00010D;
 }
 
 .footer {
