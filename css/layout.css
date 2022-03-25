@@ -1,0 +1,23 @@
+/** reusable parts of the site **/
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    max-width: 1200px;
+    padding: 50px 20px;
+}
+
+.section-title {
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: .1rem;
+    color: black;
+    margin-bottom: 10px;
+    border-bottom: 3px solid crimson;
+}
+
+span {
+    color: crimson;
+}

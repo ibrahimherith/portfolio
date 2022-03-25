@@ -1,0 +1,17 @@
+/** button.css **/
+.btn {
+    display: inline-block;
+    background-color: transparent;
+    color: white;
+    letter-spacing: .25px;
+    margin-top: 25px;
+    padding: 10px 16px;
+    border: 2px solid white;
+    transition: .3s ease;
+    transition-property: background-color, color;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+}
