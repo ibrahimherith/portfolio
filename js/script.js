@@ -1,4 +1,5 @@
 const btn = document.getElementById("menu-btn");
+
 const nav = document.getElementById("menu");
 const icon_open = document.getElementById("icon-open");
 const icon_close = document.getElementById("icon-close");
@@ -15,3 +16,4 @@ btn.addEventListener("click", () => {
     nav.classList.toggle("flex");
     nav.classList.toggle("hidden");
 })
+
