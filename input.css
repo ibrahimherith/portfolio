@@ -5,3 +5,20 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
+
+/* Custom Tailwind Css */
+/*Buttons*/
+@layer components {
+    .btn-primary {
+        @apply px-8 py-4 rounded-full border-2 border-DarkGrayish text-lg text-DarkGrayish font-medium hover:bg-DarkGrayish hover:text-White;
+    }
+
+    .btn-primary-white {
+        @apply px-8 py-4 rounded-full border-2 border-White text-lg text-White font-medium hover:bg-White hover:text-DarkGrayish;
+    }
+
+    .btn-secondary {
+        @apply px-8 py-4 rounded-full border-2 border-White text-lg text-White font-medium hover:bg-White hover:text-LightOrange;
+    }
+}
+

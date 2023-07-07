@@ -11,6 +11,13 @@ module.exports = {
 
         extend: {
             colors: {
+                /* portfolio */
+                LightOrange: ("#FF725E"),
+                DarkOrange: ("#B35042"),
+                LightGrayish: ("#E0E0E0"),
+                SemiGrayish: ("#455A64"),
+                DarkGrayish: ("#263238"),
+
                 /* Primary */
                 DarkBlue: ("hsl(233, 26%, 24%)"),
                 LimeGreen: ("hsl(136, 65%, 51%)"),
